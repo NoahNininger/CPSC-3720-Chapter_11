@@ -1,0 +1,42 @@
+<!--
+	Mouse Position Tracker
+
+	Track your mouse's x and y position within an element.
+	As you move the mouse within the element, the x position
+	and y position values will update.
+
+		1. Create a page element and add sizing to it, including height
+		   and width. Create a class style named active that has a
+		   background-color property of red. Finally, create an output element
+		   that will contain your text.
+
+		2. Select the main container element and add event listeners to it.
+		   Listen for mouseover, mouseout, and mousemove.
+
+		3. On mouseover, add the active class, and on mouseout,
+		   remove the active class.
+
+		4. On mousemove, call a function that tracks the event element clientX
+		   and clientY positions, embeds them in a human-readable sentence,
+		   and outputs it into the output element.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 11: Mouse Position Tracker Exercise</title>
+	<script type="text/javascript" src="JavaScript.js"></script>
+</head>
+<body>
+ <!--
+	1. Create a page element and add sizing to it, including height
+	   and width. Create a class style named active that has a
+	   background-color property of red. Finally, create an output element
+	   that will contain your text.
+ -->
+	<div class="container" id="active"
+		 style="width: 100px; height: 100px; background-color: red;">
+		<p>Move the mouse cursor within this box to track its movement.</p>
+		<output class="output" id="output"></output>
+	</div>
+</body>
+</html>
